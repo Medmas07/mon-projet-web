@@ -22,7 +22,9 @@ body {
     gap: 10px;
     width: 50%;
 }
-
+#list{
+    width:50%;
+}
 input {
     padding: 8px;
     border: 1px solid black;

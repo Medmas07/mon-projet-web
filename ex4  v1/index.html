@@ -4,19 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste interactive</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background: url(test.gif);
+            background-size: contain;
+        
+        }
+        .container{
+            background-color: white;
+        }
+    </style>
     <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Liste interactive</h1>
+        <h4>Turn up the volume on your PC!</h4>
         <ol id="colorList">
-            <li>Élément 1</li>
-            <li>Élément 2</li>
-            <li>Élément 3</li>
-            <li>Élément 4</li>
-            <li>Élément 5</li>
+            <li data-note="do">Do</li>
+            <li data-note="re">Ré</li>
+            <li data-note="mi">Mi</li>
+            <li data-note="fa">Fa</li>
+            <li data-note="sol">Sol</li>
+            <li data-note="la">La</li>
+            <li data-note="si">Si</li>
         </ol>
+        <audio id="do" src="do.wav"></audio>
+        <audio id="re" src="re.wav"></audio>
+        <audio id="mi" src="mi.wav"></audio>
+        <audio id="fa" src="fa.wav"></audio>
+        <audio id="sol" src="sol.wav"></audio>
+        <audio id="la" src="la.wav"></audio>
+        <audio id="si" src="si.wav"></audio>
     </div>
 </body>
 </html>

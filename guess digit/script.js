@@ -37,4 +37,8 @@ let randomNumber, maxAttempts, attemptsLeft;
                 document.getElementById("attempts").textContent = `Tentatives restantes : ${attemptsLeft}`;
             }
         }
+        function rejouer(){
+            document.getElementById("game").style.display = "none";
+            document.getElementById("Commencer").style.display = "block";
+        }
 	

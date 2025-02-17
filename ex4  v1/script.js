@@ -1,9 +1,17 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const listItems = document.querySelectorAll("#colorList li");
 
     listItems.forEach(item => {
-        item.addEventListener("click", () => {
-            item.style.backgroundColor = getRandomColor();
+        item.addEventListener("click", function () {  
+            
+            this.style.backgroundColor = getRandomColor(); 
+
+            let note = this.getAttribute("data-note"); 
+            let audio = document.getElementById(note);
+                audio.currentTime = 0; 
+                audio.play();
         });
     });
 
